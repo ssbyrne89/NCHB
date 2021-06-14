@@ -1,6 +1,10 @@
+# NCHB/application.py
+
 from flask import Flask, render_template
 
+
 application = Flask(__name__)
+
 
 @application.route("/")
 def index():
@@ -21,3 +25,4 @@ def REresources():
 @application.route("/personal_finance_and_savings_resources")
 def PFSresources():
     return render_template("PFSresources.html")
+
