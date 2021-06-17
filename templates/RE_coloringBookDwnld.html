@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+<div class = "container">
+    {% block content %}   
+        <h1>Who said real estate had to be all serious?</h1>
+        <p>Whether you're getting ready to sell your property or trying to find a property to buy, any real estate
+            transaction can get pretty hectic. Yes, we know it's a little silly, but it doesn't hurt to take a
+            moment to relax and enjoy our free coloring book. Color while enjoying a glass of wine or color with
+            your kids. Whatever you decide we hope you have fun with it. Click on
+            the button below to download it.
+        </p>
+        
+        <div class="container">
+            <p>
+                <object data="{{ url_for('static',
+                filename='Sellers_guide_coloring_book.pdf')}}"
+                type="application/pdf" style="min-height: 100vh;
+                width: 100%;"></object>
+            </p>
+        </div>

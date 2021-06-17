@@ -30,3 +30,21 @@ input[type=submit] { align-self: start; min-width: 10em; }
     height: 75px;
     width: 75px;
 }
+
+.slides {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+}
+.slides > div {
+    display: flex;
+    flex-shrink: 0;
+    width: 100%;
+    height: 300px;
+    scroll-snap-align: start;
+    scroll-behavior: smooth;
+    background: azure;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}

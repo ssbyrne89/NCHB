@@ -61,3 +61,11 @@ def wtmm_browsing_the_internet():
 @application.route("/wtmm_driving")
 def wtmm_driving():
     return render_template("wtmm_driving.html")
+
+@application.route("/sellersColoringBook")
+def sellersColoringBook():
+    return render_template("RE_coloringBookDwnld.html")
+
+@application.route("/ContentFeed")
+def ContentFeed():
+    return render_template("articlesAndNewsFeed.html")
